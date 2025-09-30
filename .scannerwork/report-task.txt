@@ -1,6 +1,0 @@
-projectKey=sonarqube
-serverUrl=http://172.20.10.2:9000
-serverVersion=25.9.0.112764
-dashboardUrl=http://172.20.10.2:9000/dashboard?id=sonarqube
-ceTaskId=b90c585f-ff0b-457a-ab0b-b25c08ff4f5c
-ceTaskUrl=http://172.20.10.2:9000/api/ce/task?id=b90c585f-ff0b-457a-ab0b-b25c08ff4f5c
