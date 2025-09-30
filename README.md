@@ -6,7 +6,7 @@ example of a yaml for me to use
 
 ## Dockerfile
 Dockerfile contains sonarscannel-cli and ansible dependecies from python.
-To convert it on premise we will need to also download sonarscanner and upload it to Artifactory to pull it from there in the right URL
+To convert it on premise we will need to also download sonarscanner and upload it to (Already under reqs folder) Artifactory to pull it from there in the right URL
 The Dockerfile doesn't copy the playbooks, it mounts later the playbooks into the workspace directory so that the image will be strictly the scanners without any yaml files.
 
 Walkthrough:
@@ -17,7 +17,8 @@ docker build -t ansible-sonarscanner .
 ```
 Run container:
 ```
-docker run -it -v $(pwd)/*.yaml:/workspace ansible-sonarscanner
+# $(pwd) current directory
+docker run -it -v $(pwd):/workspace ansible-sonarscanner
 ```
 Inside Container:
 # TODO: Change to run in container, i want it to upload to sonarqube and close at the end
@@ -33,7 +34,11 @@ sonar-scanner \
   -Dsonar.login=<your-token>
 ```
 
-
-# REQ!!!
+# REQ!!! - under reqs folder
 * Sonarqube scanner cli to be places in Artifactory
 * Base Images to compile on premise
+* Plugins for Sonarqube
+
+# On premise pipeline
+* checkout (without jars)
+* use oc commands to deploy container and then it drop automatically
