@@ -1,0 +1,21 @@
+---
+- name: Move a file on localhost
+  hosts: localhost
+  connection: local
+  become: yes
+
+  vars:
+    source_file: /tmp/test.txt
+    destination_file: /tmp/backup/test.txt
+
+  tasks:
+    - name: Ensure destination directory exists
+      file:
+        path: "{{ destination_file | dirname }}"
+        state: directory
+        mode: '0755'
+
+    - name: Move the file
+      command: mv {{ source_file }} {{ destination_file }}
+      args:
+        removes: "{{ source_file }}"
