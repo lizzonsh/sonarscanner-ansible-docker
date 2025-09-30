@@ -2,5 +2,5 @@ projectKey=sonarqube
 serverUrl=http://172.20.10.2:9000
 serverVersion=25.9.0.112764
 dashboardUrl=http://172.20.10.2:9000/dashboard?id=sonarqube
-ceTaskId=9af7d0fe-1c06-4f27-b919-a0947041a6fb
-ceTaskUrl=http://172.20.10.2:9000/api/ce/task?id=9af7d0fe-1c06-4f27-b919-a0947041a6fb
+ceTaskId=c8a9f8fb-1b81-4fa3-8445-3326a6959713
+ceTaskUrl=http://172.20.10.2:9000/api/ce/task?id=c8a9f8fb-1b81-4fa3-8445-3326a6959713
