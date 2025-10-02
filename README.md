@@ -41,4 +41,5 @@ sonar-scanner \
 
 # On premise pipeline
 * checkout (without jars)
-* use oc commands to deploy container and then it drop automatically
+* The dockerfile is not relevant to an ansible repo
+* use oc commands to pull and deploy container to scan new code and then it drop automatically

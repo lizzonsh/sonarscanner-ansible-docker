@@ -1,0 +1,6 @@
+projectKey=rotemhamalka
+serverUrl=http://172.25.96.1:9000
+serverVersion=25.9.0.112764
+dashboardUrl=http://172.25.96.1:9000/dashboard?id=rotemhamalka
+ceTaskId=951fe59f-89e7-4995-a412-6c5f0d146e36
+ceTaskUrl=http://172.25.96.1:9000/api/ce/task?id=951fe59f-89e7-4995-a412-6c5f0d146e36
