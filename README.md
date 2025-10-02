@@ -20,7 +20,6 @@ Run container:
 docker run -it -v $(pwd)/*.yaml:/workspace ansible-sonarscanner
 ```
 Inside Container:
-# TODO: Change to run in container, i want it to upload to sonarqube and close at the end
 ```
 # Lint your playbook
 ansible-lint playbook.yml
@@ -33,8 +32,11 @@ sonar-scanner \
   -Dsonar.login=<your-token>
 ```
 
+the stop container when scan finnishes
 
 # REQ!!!
 * Sonarqube scanner cli to be places in Artifactory
 * Base Image (OpenJDK) to compile on premise
 * python dependencies
+
+In the order Sonarqube to scan ansible, you will need 3 extentions in this repo under folder:
