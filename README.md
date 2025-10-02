@@ -1,5 +1,5 @@
 # Intro
-This repository contains the sonarqube-scanner-cli and ansible-lint in on container in order for my team to dynamically scan our ansible projects and write the best playbooks we can
+This repository contains the sonarqube-scanner-cli and ansible-lint in one container in order for my team to dynamically scan our ansible projects and write the best playbooks we can
 
 ## playbook-example.yaml
 example of a yaml for me to use
@@ -21,7 +21,6 @@ Run container:
 docker run -it -v $(pwd):/workspace ansible-sonarscanner
 ```
 Inside Container:
-# TODO: Change to run in container, i want it to upload to sonarqube and close at the end
 ```
 # Lint your playbook
 ansible-lint playbook.yml
@@ -34,7 +33,8 @@ sonar-scanner \
   -Dsonar.login=<your-token>
 ```
 
-# REQ!!! - under reqs folder
+
+# REQ!!!
 * Sonarqube scanner cli to be places in Artifactory
 * Base Images to compile on premise
 * Plugins for Sonarqube
