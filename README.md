@@ -35,7 +35,7 @@ sonar-scanner \
 
 
 # REQ!!!
-* Sonarqube scanner cli to be places in Artifactory
+* Sonarqube scanner cli to be places in Artifactory, link: https://binaries.sonarsource.com/?prefix=Distribution/sonar-scanner-cli/
 * Base Images to compile on premise
 * Plugins for Sonarqube
 
